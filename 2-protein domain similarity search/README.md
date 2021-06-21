@@ -1,19 +1,19 @@
 DESCRIPTION</br>
 =========================
 </br>
-This script is a perl wrapper for BlastP which allow to </br>
-Implement new strategy for searching protein structure similarity using the </br>
-structural information embedded in C-alpha angles.</br>
+This script is a perl wrapper for BlastP which allow to 
+Implement new strategy for searching protein structure similarity using the 
+structural information embedded in C-alpha angles.
 </br>
-This code takes PDB file [3D structure], create its dssp file and convert it to C-alpha angles encoded to character [1D Structural Alphabet(SA) sequence] </br>
+This code takes PDB file [3D structure], create its dssp file and convert it to C-alpha angles encoded to character [1D Structural Alphabet(SA) sequence] 
 and than printed the 1D Structural Alphabet to FASTA file which used as query input. </br>
 This allows to compare the C-alpha angles query sequence with a database of C-alpha 1D Structural Alphabet datadabse</br>
 by runing blastp using the C-alpha angles ansubstitution matrix (CASM).</br>
  </br>
-This package aim to be similar to NCBI-Blast in terms of usage. </br>
-This means that you can pass to the script the majority of the options </br>
-that you normally would use for NCBI-Blast. By default the script call Blast </br>
-with the same gap opening, gap extension and filtering settings used </br>
+This package aim to be similar to NCBI-Blast in terms of usage. 
+This means that you can pass to the script the majority of the options 
+that you normally would use for NCBI-Blast. </br>By default the script call Blast 
+with the same gap opening, gap extension and filtering settings used 
 in our benchmark.
 </br>
 </br>
@@ -21,14 +21,14 @@ Requirements</br>
 =========================
 </br>
 In order to use this package the former installation of the DSSP package and ncbi-blast package is required. </br>
-the current version of DSSP is available here: https://swift.cmbi.umcn.nl/gv/dssp/index.html</br>
+the current version of DSSP is available here: https://swift.cmbi.umcn.nl/gv/dssp/index.html</br></br>
 the ncbi package version 2.2.7 is available here: https://ftp.ncbi.nlm.nih.gov/blast/executables/legacy.NOTSUPPORTED/2.2.7/</br>
 The path to BLAST matrices should be changed in the .ncbirc file.</br>
 You should specified the location of CASM matrices. i.e:</br>
 BLASTMAT=../lib</br>
 lib is a local directory in this package that contain two matrices files:</br>
 BLOSUM80- contain CASM1 matrix.</br>
-BLOSUM45- contain CASM1 matrix.</br>
+BLOSUM45- contain CASM1 matrix.</br></br>
 In addition,the following perl moduls should be installed: Parallel::Loops and Bio::PDB::Structure </br>
 this package itself doesn't require any installation process. Just run the perl scripts which in turn will call NCBI-Blast on your computer.</br>
 </br>
