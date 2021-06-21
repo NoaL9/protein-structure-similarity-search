@@ -1,6 +1,4 @@
-  NOTE:
-  -----
-  AngLAST databases in FASTA format and in NCBI binary format are allready exist in this local directory (Updated to Apr 2018).
+  Protein angels databases in FASTA format and in NCBI binary format are allready exist in this local directory (Updated to Apr 2018).
   The bellow description and instructions are suitble for establishing new AngLAST database.
 
   Requirements
@@ -15,20 +13,20 @@
  Contents of the package
 =========================
 
-  1.  database_mfa.pl				-  Script to use in order to turn PDB files to C-alpha structural datadabse 
+  1.  database_mfa.pl					-  Script to use in order to turn PDB files to C-alpha structural datadabse 
   2.  pdb_rsync.pl					-  Update C-alpha structural datadabse (optionally) 
-  3.  pdb_rsync						-  Directory for decompresses PDB files for rsync (optionally)     
+  3.  pdb_rsync						-  Directory for decompresses PDB files for rsync. You shuld create directory with the name 'pdb_rsync' (optionally)     
   4.  pdb_files						-  Directory of all PDB files (The files are necessary for the creation of the AngLAST database and for additional calculations during the running of AngLAST)
   5.  dssp_files					-  Directory of all DSSP files for generating database (The files are necessary for the creation of the AngLAST database and for additional calculations during the running of AngLAST)
-  6.  anglastDB.mfa					-  C-alpha structural datadabse  - FASTA format
-  7.  ncbi_anglast_format			-  Directory of C-alpha structural datadabse - NCBI binary format
+  6.  anglastDB.mfa					-  C-alpha structural datadabse  - FASTA format (unzip the database.zip file)
+  7.  ncbi_anglast_format				-  Directory of C-alpha structural datadabse - NCBI binary format
   8.  README						-  This document
  
 
   Instructions
 =========================
    
-	Before using Anglast, user needs to generate the structural C-alpha database. There are two ways:
+	Before using Anglast, user needs to generate the structural C-alpha database
  
 	Generating Angblast Database using the script database_mfa.pl.
 	
@@ -49,8 +47,8 @@
 	
 		
 	pdb_rsync.pl:
-	This script allow to update the anglastDB by update the PDB files and calculate DSSP for only the new PDB structures.
-	
+	DESCRIPTION
+	This script allow to update the anglastDB by update the PDB files and calculate DSSP for only the new PDB structures.	
 	
 	SYNOPSIS
 	--------	
