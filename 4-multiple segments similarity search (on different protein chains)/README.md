@@ -1,28 +1,28 @@
 DESCRIPTION
 =========================
-This code is a perl script similiar to the code of protein domain similarity search with a little modification.
-While protein domain similarity search can get one fragmet/chains as a query, this code can get multiple fragments/chains.
-
-The instructions and requirements are similiar to those of protein domain similarity search and the difference is reflected only in the command line.
-Unlike protein domain similarity search command line, in this code command line can conculde multiple chains, multiple first amino acid position and multiple last amino acid position.
-
-For more details, read the README of protein domain similarity search.
+This code is a perl script similiar to the code of protein domain similarity search with a little modification.</br>
+While protein domain similarity search can get one fragmet/chains as a query, this code can get multiple fragments/chains.</br>
+</br>
+The instructions and requirements are similiar to those of protein domain similarity search and the difference is reflected only in the command line.</br>
+Unlike protein domain similarity search command line, in this code command line can conculde multiple chains, multiple first amino acid position and multiple last amino acid position.</br>
+</br>
+For more details, read the README of protein domain similarity search.</br>
 
 
  Contents of the package
 =========================
 
-  1.  code.pl			        	-  The source code 
-  2.  database/anglastDB.mfa		-  The databse
-  3.  lib/aa_matrix.pm				-  BLOSUM62 amino acid substitution matrix
+  1.  code.pl			        		-  The source code 
+  2.  database/anglastDB.mfa				-  The C alpha angles databse (unzip the database.zip file)</br>
+  3.  lib/aa_matrix.pm					-  BLOSUM62 amino acid substitution matrix
   4.  lib/BLOSUM80					-  C-alpha angles ansubstitution matrix (for long matches)
   5.  lib/BLOSUM45					-  C-alpha angles ansubstitution matrix (for short matches)
-  6.  examples/1avo.pdb			    -  PDB file used to demonstrate the running of this code
-  7.  output						-  A folder where the software output files are stored
+  6.  examples/1avo.pdb			    		-  PDB file used to demonstrate the running of this code
+  7.  output						-  You shuld create directory with the name 'output'. This is A folder where the software output files are stored</br>
   8.  README						-  This document  
   
-        
-	Example
+
+ Example
 =========================
 	
 	Example to demostrate how to use pdb file as query to search against C-alpha angles database.
